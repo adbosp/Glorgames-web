@@ -27,7 +27,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20"> {/* Tăng chiều cao Navigation */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/images/logo.svg" alt="Logo" className="h-14 w-15" /> {/* Tăng kích thước logo */}
+            <img src="https://raw.githubusercontent.com/adbosp/Glorgames-web/refs/heads/main/images/Logo.png?token=GHSAT0AAAAAADACE2DXWMCKQMUD54LXEWDOZ6MKS7A" alt="Logo" className="h-14 w-15" /> {/* Tăng kích thước logo */}
             <span className="font-bold text-2xl text-black">GLORGAMES</span> {/* Tăng kích thước chữ logo */}
           </Link>
           

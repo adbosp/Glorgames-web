@@ -13,7 +13,7 @@ function Footer() {
     <footer className="bg-gray-800 text-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center md:items-start justify-between">
         <div className="flex items-center space-x-4">
-          <img src="images/logo.png" alt="GlorGames Logo" className="h-16 w-16" />
+          <img src="https://raw.githubusercontent.com/adbosp/Glorgames-web/refs/heads/main/images/Logo.png?token=GHSAT0AAAAAADACE2DXWMCKQMUD54LXEWDOZ6MKS7A" alt="GlorGames Logo" className="h-16 w-16" />
           <span className="text-2xl font-bold">GlorGames</span>
         </div>
         <div className="text-center md:text-left mt-4 md:mt-0">
