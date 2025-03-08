@@ -8,13 +8,14 @@ import { Contact } from './pages/Contact';
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import './google-fonts.css';
 function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center md:items-start justify-between">
         <div className="flex items-center space-x-4">
-          <img src="https://res.cloudinary.com/dk7hsdijn/image/upload/c_thumb,w_200,g_face/v1741444897/Logo_dxl23c.png" alt="GlorGames Logo" className="h-16 w-16" />
-          <span className="text-2xl font-bold">GlorGames</span>
+          <img src="https://res.cloudinary.com/dk7hsdijn/image/upload/c_thumb,w_200,g_face/v1741444897/Logo_dxl23c.png" alt="GlorGames Logo" className="h-16 w-17" />
+          <span className="montserrat-uniquifier text-2xl">GLORGAMES</span>
         </div>
         <div className="text-center md:text-left mt-4 md:mt-0">
           <p>&copy; {new Date().getFullYear()} GlorGames. All rights reserved.</p>

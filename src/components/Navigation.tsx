@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { TowerControl, Menu, X } from 'lucide-react';
+import '../google-fonts.css';
 
 export function Navigation() {
   const location = useLocation();
@@ -25,13 +26,12 @@ export function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20"> {/* Tăng chiều cao Navigation */}
+        <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2">
-            <img src="https://res.cloudinary.com/dk7hsdijn/image/upload/c_thumb,w_200,g_face/v1741444897/Logo_dxl23c.png" alt="Logo" className="h-14 w-15" /> {/* Tăng kích thước logo */}
-            <span className="font-bold text-2xl text-black">GLORGAMES</span> {/* Tăng kích thước chữ logo */}
+            <img src="https://res.cloudinary.com/dk7hsdijn/image/upload/c_thumb,w_200,g_face/v1741444897/Logo_dxl23c.png" alt="Logo" className="h-14 w-15" />
+            <span className="montserrat-uniquifier text-2xl text-black">GLORGAMES</span>
           </Link>
           
-          {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden text-black"
@@ -39,8 +39,7 @@ export function Navigation() {
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
           
-          {/* Desktop navigation */}
-          <div className="hidden md:flex space-x-10"> {/* Tăng khoảng cách giữa các mục */}
+          <div className="hidden md:flex space-x-10">
             {[{
               path: '/', label: 'Home'
             }, {
@@ -66,7 +65,6 @@ export function Navigation() {
         </div>
       </div>
       
-      {/* Mobile menu */}
       <div
         className={`md:hidden transition-all duration-300 ${
           isMenuOpen
