@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { TowerControl, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import '../google-fonts.css';
 
 export function Navigation() {
@@ -46,8 +46,6 @@ export function Navigation() {
               path: '/games', label: 'Games'
             }, {
               path: '/about', label: 'About'
-            }, {
-              path: '/contact', label: 'Contact'
             }].map(({ path, label }) => (
               <Link
                 key={path}
@@ -79,8 +77,6 @@ export function Navigation() {
             path: '/games', label: 'Games'
           }, {
             path: '/about', label: 'About'
-          }, {
-            path: '/contact', label: 'Contact'
           }].map(({ path, label }) => (
             <Link
               key={path}

@@ -4,7 +4,6 @@ import { Navigation } from './components/Navigation';
 import { Home } from './pages/Home';
 import { Games } from './pages/Games';
 import { About } from './pages/About';
-import { Contact } from './pages/Contact';
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -42,7 +41,6 @@ function Footer() {
     </footer>
   );
 }
-
 function App() {
   return (
     <Router>
@@ -53,7 +51,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/games" element={<Games />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
