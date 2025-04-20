@@ -1,28 +1,17 @@
-import React from 'react';
-<<<<<<< HEAD
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-=======
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
->>>>>>> 8deac28 (Initial commit)
 import { Navigation } from './components/Navigation';
 import { Home } from './pages/Home';
 import { Games } from './pages/Games';
 import { About } from './pages/About';
-<<<<<<< HEAD
-=======
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Document from './pages/Document';
 import TermsOfService from './pages/TermsOfService';
 import Help from './pages/Help';
->>>>>>> 8deac28 (Initial commit)
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import './google-fonts.css';
-<<<<<<< HEAD
-=======
 
->>>>>>> 8deac28 (Initial commit)
 function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-8">
@@ -46,16 +35,10 @@ function Footer() {
             </a>
           </p>
           <p className="text-sm">
-<<<<<<< HEAD
-            <a href="/privacy-policy" className="text-gray-300 hover:underline">Privacy Policy</a> |
-            <a href="/terms-of-service" className="text-gray-300 hover:underline"> Terms of Service</a> |
-            <a href="/help" className="text-gray-300 hover:underline"> Help</a>
-=======
             <Link to="/privacy-policy" className="text-gray-300 hover:underline">Privacy Policy</Link> |
             <Link to="/terms-of-service" className="text-gray-300 hover:underline"> Terms of Service</Link> |
             <Link to="/document" className="text-gray-300 hover:underline"> Documentation</Link> |
             <Link to="/help" className="text-gray-300 hover:underline"> Help</Link>
->>>>>>> 8deac28 (Initial commit)
           </p>
           <p className="text-sm">Contact us: support@glorgames.com</p>
         </div>
@@ -63,10 +46,7 @@ function Footer() {
     </footer>
   );
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 8deac28 (Initial commit)
 function App() {
   return (
     <Router>
@@ -77,13 +57,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/games" element={<Games />} />
             <Route path="/about" element={<About />} />
-<<<<<<< HEAD
-=======
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/document" element={<Document />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/help" element={<Help />} />
->>>>>>> 8deac28 (Initial commit)
           </Routes>
         </main>
         <Footer />
